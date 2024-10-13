@@ -32,7 +32,7 @@ Under that add
 configure<BootstrapPluginExtension> {
     uploadType.set(com.mark.bootstrap.UploadType.FTP)
     buildType.set("normal")
-    customRepo.set("https://assets.sosrs.com/LauncherTest/repo")
+    customRepo.set("https://assets.solaireRS.com/LauncherTest/repo")
     passiveMode.set(false)
 }
 ```
@@ -140,7 +140,7 @@ At the root of your project make a file called bootstrap.template this will allo
 * Copy your launcher.crt that you made  into /resources/net/runelite/launcher/
 * Go into launcher.properties And edit the following 
 ```kotlin
-https://assets.sosrs.com/LauncherTest/ClientManifest.json
+https://assets.solaireRS.com/LauncherTest/ClientManifest.json
 ```
 
 Should link should go to a json on your webhost or aws that looks like this 
@@ -149,8 +149,8 @@ Should link should go to a json on your webhost or aws that looks like this
   {
     "name": "Normal",
     "main": "com.telos.Bootstrap",
-    "bootstrap": "https://assets.sosrs.com/LauncherTest/bootstrap.json",
-    "bootstrapsig": "https://assets.sosrs.com/LauncherTest/bootstrap.json.sha256",
+    "bootstrap": "https://assets.solaireRS.com/LauncherTest/bootstrap.json",
+    "bootstrapsig": "https://assets.solaireRS.com/LauncherTest/bootstrap.json.sha256",
     "tooltip": "The Latest most stable Client"
   }
 ]
@@ -175,18 +175,18 @@ asking the user and download right away, if you have more then 2 clients it will
 ### Branding
 ## Names
 
-1) Go into launcher.properties And edit 'sosrs' and links to your server links and name
+1) Go into launcher.properties And edit 'solaireRS' and links to your server links and name
 
 ```kotlin
 runelite.launcher.version=${project.version}  
 runelite.discord.invite=**https://runelite.net/redirect/launcher/discord**  
 runelite.wiki.troubleshooting.link=**https://runelite.net/redirect/launcher/troubleshooting**  
 runelite.dnschange.link=https://1.1.1.1/dns/#setup-instructions  
-runelite.download.link=https://**sosrs**.net/download/  
-runelite.website=https://**sosrs**.net/  
-runelite.bootstrap=https://sosrs.s3.eu-west-2.amazonaws.com/bootstrap.json  
-runelite.bootstrapsig=https://sosrs.s3.eu-west-2.amazonaws.com/bootstrap.json.sha256  
-runelite.name=**Sosrs**  
+runelite.download.link=https://**solaireRS**.net/download/  
+runelite.website=https://**solaireRS**.net/  
+runelite.bootstrap=https://solaireRS.s3.eu-west-2.amazonaws.com/bootstrap.json  
+runelite.bootstrapsig=https://solaireRS.s3.eu-west-2.amazonaws.com/bootstrap.json.sha256  
+runelite.name=**SolaireRS**  
 runelite.main=net.runelite.client.RuneLite
 ```
 
@@ -196,11 +196,11 @@ This will bring this window up
 
 ![This is an image](https://i.imgur.com/VqiqIeP.png)
 
-Make sure CC is selected and replace 'Sosrs' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
+Make sure CC is selected and replace 'SolaireRS' with 'MyCoolName' MAKE SURE ITS CAPS E same with the server name
 
 3) Inside Intellij click the root of the project and press CTRL + ALT + R
 
-Make sure CC is selected and replace 'sosrs' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
+Make sure CC is selected and replace 'solaireRS' with 'myCoolName' MAKE SURE ITS LOWERCASE E same with the server name
 
 ![This is an image](https://i.imgur.com/3uXXxbL.png)
 
@@ -246,7 +246,7 @@ public static final Color PROGRESS_ERROR_COLOR = new Color(230, 30, 30);
 
 ## Getting your files
 
-Once you have pushed your files to github, github actions will build your launcher you can then find them under the workflow action it runs EG: https://github.com/Sosrs-Community/Runelite-Launcher-rsps/actions/runs/3014844052
+Once you have pushed your files to github, github actions will build your launcher you can then find them under the workflow action it runs EG: https://github.com/SolaireRS-Community/Runelite-Launcher-rsps/actions/runs/3014844052
 
 ![img.png](img.png)
 

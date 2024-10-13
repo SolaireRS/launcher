@@ -81,15 +81,15 @@ jlink \
   --add-modules jdk.xml.dom \
   --add-modules jdk.zipfs
 
-cp native/build-aarch64/src/Release/Sosrs.exe build/win-aarch64/
-cp target/Sosrs.jar build/win-aarch64/
+cp native/build-aarch64/src/Release/SolaireRS.exe build/win-aarch64/
+cp target/SolaireRS.jar build/win-aarch64/
 cp packr/win-aarch64-config.json build/win-aarch64/config.json
 cp liblauncher/buildaarch64/Release/launcher_aarch64.dll build/win-aarch64/
 
-echo Sosrs.exe aarch64 sha256sum
-sha256sum build/win-aarch64/Sosrs.exe
+echo SolaireRS.exe aarch64 sha256sum
+sha256sum build/win-aarch64/SolaireRS.exe
 
-dumpbin //HEADERS build/win-aarch64/Sosrs.exe
+dumpbin //HEADERS build/win-aarch64/SolaireRS.exe
 
 # We use the filtered iss file
 iscc target/filtered-resources/arch64.iss

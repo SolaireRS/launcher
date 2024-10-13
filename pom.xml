@@ -30,8 +30,8 @@
 	<groupId>net.runelite</groupId>
 	<artifactId>launcher</artifactId>
 	<version>1.0</version>
-	<name>Sosrs Launcher</name>
-	<description>Launcher for Sosrs client</description>
+	<name>SolaireRS Launcher</name>
+	<description>Launcher for SolaireRS client</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -152,7 +152,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>Sosrs</finalName>
+		<finalName>SolaireRS</finalName>
 
 
 		<plugins>

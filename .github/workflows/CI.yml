@@ -62,9 +62,9 @@ jobs:
         with:
           name: windows
           path: |
-            SosrsSetup.exe
-            SosrsSetup32.exe
-            SosrsSetupAArch64.exe
+            SolaireRSSetup.exe
+            SolaireRSSetup32.exe
+            SolaireRSSetupAArch64.exe
           if-no-files-found: error
   linux:
     runs-on: ubuntu-20.04
@@ -100,14 +100,14 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: jar
-          path: target/Sosrs.jar
+          path: target/SolaireRS.jar
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
           name: linux
           path: |
-            Sosrs.AppImage
-            Sosrs-aarch64.AppImage
+            SolaireRS.AppImage
+            SolaireRS-aarch64.AppImage
           if-no-files-found: error
   macos:
     runs-on: macos-12
@@ -153,13 +153,13 @@ jobs:
         run: ./build-osx-aarch64.sh --build --dmg
       # tar app to keep permissions correct
       - name: tar app
-        run: tar -cf app.tar build/macos-x64/Sosrs.app build/macos-aarch64/Sosrs.app build-osx-x64.sh build-osx-aarch64.sh osx/signing.entitlements
+        run: tar -cf app.tar build/macos-x64/SolaireRS.app build/macos-aarch64/SolaireRS.app build-osx-x64.sh build-osx-aarch64.sh osx/signing.entitlements
       - uses: actions/upload-artifact@v4
         with:
           name: macos-dmg
           path: |
-            Sosrs-x64.dmg
-            Sosrs-aarch64.dmg
+            SolaireRS-x64.dmg
+            SolaireRS-aarch64.dmg
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
