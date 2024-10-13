@@ -50,7 +50,7 @@ Type: filesandordirs; Name: "{app}\jre"
 Type: files; Name: "{userprograms}\SolaireRS.lnk"
 
 [UninstallDelete]
-Type: filesandordirs; Name: "{%USERPROFILE}\.solaireRS\repository2"
+Type: filesandordirs; Name: "{%USERPROFILE}\.SolaireRS\repository2"
 ; includes install_id, settings, etc
 Type: filesandordirs; Name: "{app}"
 
